@@ -33,6 +33,12 @@ def readOneTable():
     return lines
 
 # linesList - [[line11, line12, line13, ...], [line21, line22, ...], ...]
+# returns such a string:
+# Poem about [random title name from Wikipedia]
+# random line from [line11, line12, ...]
+# random line from [line21, line22, ...]
+# ...
+# random line from [lineN1, lineN2, ...]
 def randomPoem(linesList):
     poem = "Poem about " + randomWikipediaTitle() + "\n"
     for l in linesList:
